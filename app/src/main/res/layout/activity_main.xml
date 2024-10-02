@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#66FFEB3B">
+
+    <LinearLayout
+        android:id="@+id/travelerInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:textSize="40sp"
+            android:textColor="#E91E63"
+            android:text="Travel Form" />
+
+        <EditText
+            android:id="@+id/travelerNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="9dp"
+            android:hint="Traveler Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#2226FF" />
+
+        <EditText
+            android:id="@+id/travelerEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#2226FF"
+            android:background="@drawable/shape"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="9dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/travelerPhoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="#2226FF"
+            android:background="@drawable/shape"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="9dp"
+            android:inputType="phone"
+            android:hint="Phone Number"
+            android:minHeight="48dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Enter OTP (5 digits)"
+            android:textColorHint="#2226FF"
+            android:background="@drawable/shape"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:endIconMode="password_toggle"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/travelerOtpInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:maxLength="5"
+                android:minHeight="40dp"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/travelerPositionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:spinnerMode="dropdown"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/travelerSubmitBtn"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/travelerErrorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/travelerOutputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/travelerResultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>

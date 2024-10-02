@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="travelerNameInput" type="id" />
+    <item name="travelerEmailInput" type="id" />
+    <item name="travelerPhoneInput" type="id" />
+    <item name="travelerOtpInput" type="id" />
+    <item name="travelerPositionSpinner" type="id" />
+    <item name="travelerSubmitBtn" type="id" />
+    <item name="travelerErrorText" type="id" />
+    <item name="travelerResultText" type="id" />
+    <item name="travelerInputLayout" type="id" />
+    <item name="travelerOutputLayout" type="id" />
+</resources>
